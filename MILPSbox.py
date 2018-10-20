@@ -26,7 +26,7 @@ def getVariables_From_Constraints(C):
         temp = temp.replace('>=', ' ')
         temp = temp.replace('<=', ' ')
         temp = temp.split()
-    for v in temp:
-        if not v.isdigit():
-            V.add(v)
+        for v in temp:
+            if not v.isdigit():
+                V.add(v)
     return V
